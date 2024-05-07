@@ -1,2 +1,2 @@
-# Godot-2D-Components
-基于 godot 4.x 的 2D 游戏组件库
+# Moonpie Studio Godot Dev Template
+基于 godot 4.x 的 2D 游戏开发模板
