@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Setting="*res://store/setting.gd"
+State="*res://store/state.gd"
 
 [display]
 

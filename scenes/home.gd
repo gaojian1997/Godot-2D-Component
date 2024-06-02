@@ -7,10 +7,6 @@ signal call_setting
 @onready var setting = preload("res://scenes/base/setting.tscn").instantiate()
 
 var locales = []
-var lang_table = {
-  "English": "English",
-  "Chinese": "简体中文"
-}
 
 func _ready():
   locales = TranslationServer.get_loaded_locales()
@@ -20,8 +16,8 @@ func _ready():
   var select_index = locales.find("en")
   for locale in locales:
     var lang = TranslationServer.get_locale_name(locale)
-    if lang_table[lang]:
-      lang = lang_table[lang]
+    if Setting.lang_config[lang]:
+      lang = Setting.lang_config[lang]
     $LanguageOptionButton.add_item(lang, index)
     if os_lang == locale:
       select_index = index

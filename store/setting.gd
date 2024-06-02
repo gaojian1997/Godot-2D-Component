@@ -1,6 +1,12 @@
 extends Node
 
-var language = {
-  "en": { "id": 0, "name": "English" },
-  "zh": { "id": 1, "name": "简体中文" },
+var lang_config = {
+  "English": "English",
+  "Chinese": "简体中文"
+}
+
+var audio_bus_config = {
+  "Master": 100,
+  "Music": 100,
+  "Sound": 100
 }
